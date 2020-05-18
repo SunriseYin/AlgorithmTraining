@@ -1,4 +1,4 @@
-package cn.sunrise.leecode;
+package cn.sunrise.leecode.chapter01;
 
 public class Code11 {
 
