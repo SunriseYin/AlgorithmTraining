@@ -44,16 +44,17 @@ public class Code24 {
     public static ListNode swapPairsNoDi(ListNode head){
         ListNode pre = new ListNode(0);
         pre.next = head;
+
         ListNode temp = pre;
 
         while (temp.next != null && temp.next.next != null){
             ListNode start = temp.next;
             ListNode end = temp.next.next;
-
+            //转化
             temp.next = end;
             start.next = end.next;
             end.next = start;
-
+            //赋值
             temp = start;
         }
 

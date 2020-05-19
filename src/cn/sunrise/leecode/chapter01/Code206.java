@@ -11,14 +11,17 @@ public class Code206 {
 
     }
 
+    //转换后移动
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;
-        ListNode temp = null;
 
-        while( cur != null){
+        ListNode temp;
+
+        while ( cur != null){
             temp = cur.next;
             cur.next = pre;
+
             pre = cur;
             cur = temp;
         }
