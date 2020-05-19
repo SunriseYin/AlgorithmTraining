@@ -16,6 +16,7 @@ public class Code283 {
         for (int i = 0; i < a.length; i++) {
             if(a[i] != 0) {
                 if(zeroIndex != i){
+                    //把非0 挪到 0的索引位置
                     a[zeroIndex] = a[i];
                     a[i] = 0;
                 }

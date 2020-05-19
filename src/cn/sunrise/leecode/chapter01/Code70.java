@@ -17,6 +17,8 @@ public class Code70 {
 
     //说实话不明白只能背诵了
     public static int climbStairs(int n) {
+        //f(n) = f(n - 2) + f(n - 1)
+        //注意边界条件
         if ( n == 1 ) {
             return 1;
         }
